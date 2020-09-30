@@ -7,23 +7,24 @@ import DashboardRoutes from "./DashboardRoutes";
 const DashboardLayout = styled.div`
   height: 100vh;
   background-color: #ffffff;
+  padding-left: 0.75em;
   overflow-x: hidden;
   overflow-y: hidden;
   /* border: 1px solid red; */
 `;
 
 const MainContainer = styled(Row)`
-  height: 100%;
+  /* height: 100%; */
   background-color: #ffffff;
   /* padding: 0; */
-  border: 1px solid blue;
+  border: 1px solid orange;
   /* flex-direction: row; */
 `;
 function Dashboard() {
   return (
-    <DashboardLayout className="container-fixed-header h-100">
-      <MainContainer className="h-100 border border-danger">
-        <Col md={3} className="p-0 border border-primary">
+    <DashboardLayout className="container-fixed-header">
+      <MainContainer className="h-100 border border-danger h-100">
+        <Col md={1} className="p-0 border border-primary">
           <SideMenu />
         </Col>
         <Col md={7} className="animated fadeIn">
