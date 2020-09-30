@@ -7,6 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { DexefContext } from "../../utils/DexefContext";
 
 const SideMenuContainer = styled.div`
+  /* width: 20vw; */
   border: 1px solid green;
   /* .nav-link.active {
     background: #f7f7f7;
@@ -62,7 +63,7 @@ export default function SideMenuSection() {
       aria-orientation="vertical"
       //   onClick={e => e.stopPropagation()}
     >
-      <FontAwesomeIcon color="grey" icon={faBars} />
+      <FontAwesomeIcon color="#D5D3D2" icon={faBars} />
       <Nav defaultActiveKey="/" className="flex-column" variant="pills">
         {pages &&
           pages.map((page) => (
@@ -78,7 +79,6 @@ export default function SideMenuSection() {
             </Nav.Item>
           ))}
       </Nav>
-      <hr className="d-none d-sm-block" />
     </SideMenuContainer>
   );
 }

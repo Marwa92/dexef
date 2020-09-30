@@ -1,8 +1,7 @@
-import React, { createContext, useState } from "react";
+import React, { createContext } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
   faThLarge,
   faStar,
   faUserPlus,
@@ -27,42 +26,42 @@ export function DexefProvider(props) {
   const pages = [
     {
       name: "summary",
-      icon: <FontAwesomeIcon color="grey" icon={faThLarge} />,
+      icon: <FontAwesomeIcon color="#D5D3D2" icon={faThLarge} />,
       path: "/summary",
       controls: "v-pills-profile",
       component: Summary,
     },
     {
       name: "invoices",
-      icon: <FontAwesomeIcon color="grey" icon={faWallet} />,
+      icon: <FontAwesomeIcon color="#D5D3D2" icon={faWallet} />,
       path: "/",
       controls: "",
       component: Invoices,
     },
     {
       name: "rating",
-      icon: <FontAwesomeIcon color="grey" icon={faStar} />,
+      icon: <FontAwesomeIcon color="#D5D3D2" icon={faStar} />,
       path: "/rating",
       controls: "",
       component: Rating,
     },
     {
       name: "warning",
-      icon: <FontAwesomeIcon color="grey" icon={faExclamationTriangle} />,
+      icon: <FontAwesomeIcon color="#D5D3D2" icon={faExclamationTriangle} />,
       path: "/warning",
       controls: "",
       component: Warning,
     },
     {
       name: "addClient",
-      icon: <FontAwesomeIcon color="grey" icon={faUserPlus} />,
+      icon: <FontAwesomeIcon color="#D5D3D2" icon={faUserPlus} />,
       path: "/addclient",
       controls: "",
       component: AddClient,
     },
     {
       name: "help",
-      icon: <FontAwesomeIcon color="grey" icon={faQuestionCircle} />,
+      icon: <FontAwesomeIcon color="#D5D3D2" icon={faQuestionCircle} />,
       path: "/help",
       controls: "v-pills-home",
       component: Help,
