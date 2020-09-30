@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { DexefContext } from "../../utils/DexefContext";
 
 const SideMenuContainer = styled.div`
-  border: 1px solid green;
+  border-right: 1px solid #e2e3e4;
   text-align: center;
   padding-top: 1em;
   margin-left: 2px;

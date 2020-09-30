@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import SideMenu from "../../components/SideMenu";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import DashboardRoutes from "./DashboardRoutes";
+import SideMenu from "../../components/SideMenu";
+import Header from "../../components/Header";
 
 const DashboardLayout = styled.div`
   height: 100vh;
@@ -14,21 +15,27 @@ const DashboardLayout = styled.div`
 `;
 
 const MainContainer = styled(Row)`
-  /* height: 100%; */
+  height: 100%;
   background-color: #ffffff;
-  /* padding: 0; */
   border: 1px solid orange;
-  /* flex-direction: row; */
+`;
+const PageContainer = styled(Row)`
+  background: #f0f4f6;
 `;
 function Dashboard() {
   return (
     <DashboardLayout className="container-fixed-header">
       <MainContainer className="h-100 border border-danger h-100">
-        <Col md={1} className="p-0 border border-primary">
+        <Col md={1} className="p-0 border border-danger">
           <SideMenu />
         </Col>
-        <Col md={7} className="animated fadeIn">
-          <DashboardRoutes />
+        <Col>
+          <Row className="p-0 border border-danger">
+            <Header />
+          </Row>
+          <PageContainer className="animated fadeIn h-100">
+            <DashboardRoutes />
+          </PageContainer>
         </Col>
       </MainContainer>
     </DashboardLayout>
