@@ -1,19 +1,19 @@
 import React from "react";
-import { FormGroup } from "react-bootstrap";
+import { FormGroup, FormControl } from "react-bootstrap";
 import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FormControl from "react-bootstrap/FormControl";
+
 const SearchIcon = styled(FontAwesomeIcon)`
   position: absolute;
   display: block;
   text-align: center;
   top: 1em;
-  left: 0.5em;
+  left: 1em;
 `;
 const SearchControl = styled(FormControl)`
   box-sizing: border-box;
-  padding-left: 2em;
+  padding-left: 2.75em;
   height: 3em;
   border-top: none;
   border-bottom: none;
