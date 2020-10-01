@@ -8,7 +8,6 @@ import avatar from "../../assets/Profilepic.png";
 
 const Container = styled(Row)`
   height: 3em;
-  border: 1px solid green;
   width: 100%;
   padding: 0;
 `;

@@ -7,7 +7,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { DexefContext } from "../../utils/DexefContext";
 
 const SideMenuContainer = styled.div`
-  border-right: 1px solid #e2e3e4;
   text-align: center;
   padding-top: 1em;
   margin-left: 2px;
@@ -34,7 +33,7 @@ export default function SideMenuSection() {
     >
       <FontAwesomeIcon color="#D5D3D2" icon={faBars} />
 
-      <Nav defaultActiveKey="/" className="flex-column" variant="pills">
+      <Nav defaultActiveKey="/" className="flex-column">
         {pages &&
           pages.map((page) => (
             <Nav.Item key={page.name} className="mt-3">

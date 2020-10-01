@@ -12,7 +12,6 @@ const Title = styled.p`
 const FirstRow = styled(Row)`
   box-sizing: border-box;
   justify-content: space-between;
-  border: 1px solid purple;
   height: 2em;
   margin-top: 0;
 `;
