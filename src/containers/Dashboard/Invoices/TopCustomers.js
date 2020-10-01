@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function TopCustomers() {
-    return (
-        <div>
-          top  
-        </div>
-    )
+  return <div></div>;
 }

@@ -11,13 +11,11 @@ const DashboardLayout = styled.div`
   padding-left: 0.75em;
   overflow-x: hidden;
   overflow-y: hidden;
-  /* border: 1px solid red; */
 `;
 
 const MainContainer = styled(Row)`
   height: 100%;
   background-color: #ffffff;
-  border: 1px solid orange;
 `;
 const PageContainer = styled(Row)`
   background: #f0f4f6;
@@ -25,12 +23,12 @@ const PageContainer = styled(Row)`
 function Dashboard() {
   return (
     <DashboardLayout className="container-fixed-header">
-      <MainContainer className="h-100 border border-danger h-100">
-        <Col md={1} className="p-0 border border-danger">
+      <MainContainer className="h-100">
+        <Col md={1} className="p-0">
           <SideMenu />
         </Col>
         <Col>
-          <Row className="p-0 border border-danger">
+          <Row className="p-0">
             <Header />
           </Row>
           <PageContainer className="animated fadeIn h-100 px-4 pt-4 pb-2">

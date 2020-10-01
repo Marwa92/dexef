@@ -7,8 +7,8 @@ import TopCustomers from "./TopCustomers";
 export default function Invoices() {
   return (
     <Fragment>
-      <Col md={8} className="border border-danger">
-        <Row className="h-50 border border-secondary">
+      <Col md={8} className="">
+        <Row className="h-50">
           <SalesInvoice />
         </Row>
         <Row>
@@ -16,7 +16,7 @@ export default function Invoices() {
         </Row>
       </Col>
       <Col md={1}></Col>
-      <Col className="border border-primary">
+      <Col className="">
         <TopCustomers />
       </Col>
     </Fragment>
