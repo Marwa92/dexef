@@ -8,15 +8,14 @@ import AddClient from "./AddClient/index";
 import Help from "./Help/index";
 
 export default function DashboardRoutes() {
-
   return (
     <Switch>
       <Route path="/summary" component={Summary} />
-      <Route path="/" component={Invoices} />
       <Route path="/rating" component={Rating} />
       <Route path="/warning" component={Warning} />
       <Route path="/addClient" exact component={AddClient} />
       <Route path="/help" exact component={Help} />
+      <Route path="/" component={Invoices} />
     </Switch>
   );
 }

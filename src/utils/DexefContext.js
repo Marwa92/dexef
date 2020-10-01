@@ -63,10 +63,16 @@ export function DexefProvider(props) {
     },
   ];
 
+  const invoices = [
+    { no: "#46786", customer: "Bell Han", sold: "5", total: "1200 AED" },
+    { no: "#47786", customer: "victoria Han", sold: "6", total: "1200 AED" },
+    { no: "#48786", customer: "Bella Han", sold: "4", total: "1200 AED" },
+  ];
   return (
     <DexefContext.Provider
       value={{
         pages,
+        invoices,
         // isMobile,
       }}
     >

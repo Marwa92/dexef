@@ -33,7 +33,7 @@ function Dashboard() {
           <Row className="p-0 border border-danger">
             <Header />
           </Row>
-          <PageContainer className="animated fadeIn h-100">
+          <PageContainer className="animated fadeIn h-100 px-4 pt-4 pb-2">
             <DashboardRoutes />
           </PageContainer>
         </Col>
