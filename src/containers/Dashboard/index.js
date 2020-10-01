@@ -10,12 +10,15 @@ const DashboardLayout = styled.div`
   background-color: #ffffff;
   padding-left: 0.75em;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 `;
 
 const MainContainer = styled(Row)`
   height: 100%;
   background-color: #ffffff;
+`;
+const MenuWrapper = styled(Col)`
+  border-right: 1px solid #e2e3e4;
 `;
 const PageContainer = styled(Row)`
   background: #f0f4f6;
@@ -24,14 +27,14 @@ function Dashboard() {
   return (
     <DashboardLayout className="container-fixed-header">
       <MainContainer className="h-100">
-        <Col md={1} className="p-0">
+        <MenuWrapper md={1} className="p-0">
           <SideMenu />
-        </Col>
+        </MenuWrapper>
         <Col>
           <Row className="p-0">
             <Header />
           </Row>
-          <PageContainer className="animated fadeIn h-100 px-4 pt-4 pb-2">
+          <PageContainer className="h-100 px-4 pt-4 pb-2">
             <DashboardRoutes />
           </PageContainer>
         </Col>
