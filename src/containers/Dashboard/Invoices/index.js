@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Col, Row } from "react-bootstrap";
 import SalesInvoice from "./SalesInvoice";
 import WeekSummary from "./WeekSummary";
-import TopCustomers from "./TopCustomers";
+import TopRating from "./TopRating";
 
 export default function Invoices() {
   return (
@@ -15,9 +15,8 @@ export default function Invoices() {
           <WeekSummary />
         </Row>
       </Col>
-      <Col md={1}></Col>
-      <Col className="">
-        <TopCustomers />
+      <Col className="border border-primary ml-5 mr-3 p-0 my-0">
+        <TopRating />
       </Col>
     </Fragment>
   );
