@@ -24,20 +24,13 @@ const TabsWrapper = styled.div`
       color: #0b78bf;
     }
   }
-  /* #noanim-tab-example-tab-customers.active,
-  #noanim-tab-example-tab-sales.active {
-  } */
 `;
 const TabsParent = styled(Tabs)``;
 
 export default function CustomTabs() {
   return (
     <TabsWrapper>
-      <TabsParent
-        defaultActiveKey="customers"
-        transition={false}
-        id="noanim-tab-example"
-      >
+      <TabsParent defaultActiveKey="customers" transition={false}>
         <Tab
           eventKey="customers"
           title={

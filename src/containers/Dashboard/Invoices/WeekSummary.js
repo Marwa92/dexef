@@ -33,7 +33,7 @@ const data = {
 export default function WeekSummary() {
   return (
     <Fragment>
-      <Title>Week summary</Title>
+      <Title className="mt-4">Week summary</Title>
       <Wrapper className="m-0">
         <FontAwesomeIcon
           icon={faQuestionCircle}

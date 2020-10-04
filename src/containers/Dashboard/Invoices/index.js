@@ -8,14 +8,14 @@ export default function Invoices() {
   return (
     <Fragment>
       <Col md={8} className="">
-        <Row className="h-50 mb-4">
+        <Row className="h-50">
           <SalesInvoice />
         </Row>
         <Row className="">
           <WeekSummary />
         </Row>
       </Col>
-      <Col className="border border-primary ml-5 mr-3 p-0 my-0">
+      <Col className="ml-5 mr-3 p-0 my-0">
         <TopRating />
       </Col>
     </Fragment>

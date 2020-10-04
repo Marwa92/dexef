@@ -10,7 +10,7 @@ const DashboardLayout = styled.div`
   background-color: #ffffff;
   padding-left: 0.75em;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 `;
 
 const MainContainer = styled(Row)`
@@ -22,11 +22,12 @@ const MenuWrapper = styled(Col)`
 `;
 const PageContainer = styled(Row)`
   background: #f0f4f6;
+  height: 100vh;
 `;
 function Dashboard() {
   return (
     <DashboardLayout className="container-fixed-header">
-      <MainContainer className="h-100">
+      <MainContainer className="">
         <MenuWrapper md={1} className="p-0">
           <SideMenu />
         </MenuWrapper>
@@ -34,7 +35,7 @@ function Dashboard() {
           <Row className="p-0">
             <Header />
           </Row>
-          <PageContainer className="h-100 px-4 pt-4 pb-2">
+          <PageContainer className="px-4 pt-4 pb-2">
             <DashboardRoutes />
           </PageContainer>
         </Col>
